@@ -1,0 +1,5 @@
+Windows Shell as admin
+    Set-ExecutionPolicy RemoteSigned
+
+Ejecutar en carpeta
+    venv\Scripts\activate
