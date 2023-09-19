@@ -3,3 +3,10 @@ Windows Shell as admin
 
 Ejecutar en carpeta
     venv\Scripts\activate
+
+Ejecutar en la carpeta del proyecto
+    py manage.py runserver
+
+SET ThisScriptsDirectory=%~dp0
+SET PowerShellScriptPath=%ThisScriptsDirectory%venv.ps1
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%PowerShellScriptPath%""' -Verb RunAs}"

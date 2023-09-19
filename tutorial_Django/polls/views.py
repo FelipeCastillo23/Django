@@ -19,7 +19,7 @@ def detail(request, question_id):
     return render(request, "polls/detail.html", {"question": question})
 
 
-def results(request, question_id):
+def results(request, question_id) -> HttpResponse:
     response = "You're looking at the results of question %s."
     return HttpResponse(response % question_id)
 
